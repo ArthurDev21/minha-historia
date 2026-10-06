@@ -1,0 +1,363 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #0f172a;
+    color: white;
+    header {
+    width: 100%;
+    padding: 20px 50px;
+    background-color: #020617;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    gap: 35px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    color: #38bdf8;
+}
+section {
+    min-height: 100vh;
+    padding: 120px 10%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+section h1 {
+    font-size: 60px;
+    margin-bottom: 20px;
+}
+
+section h2 {
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+
+section p {
+    max-width: 700px;
+    font-size: 20px;
+    line-height: 1.7;
+}
+.hero {
+    text-align: center;
+    align-items: center;
+}
+
+.saudacao {
+    font-size: 18px;
+    letter-spacing: 5px;
+    color: #38bdf8;
+    margin-bottom: 15px;
+}
+
+.hero h1 {
+    font-size: 90px;
+    letter-spacing: 8px;
+    margin-bottom: 10px;
+}
+
+.hero h2 {
+    font-size: 28px;
+    font-weight: normal;
+    margin-bottom: 25px;
+}
+
+.descricao {
+    max-width: 650px;
+    font-size: 18px;
+    line-height: 1.7;
+    margin-bottom: 35px;
+}
+
+.botao {
+    display: inline-block;
+    padding: 15px 30px;
+    background-color: #38bdf8;
+    color: #020617;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 8px;
+    transition: 0.3s;
+}
+
+.botao:hover {
+    transform: translateY(-5px);
+    background-color: #7dd3fc;
+}
+.capitulo {
+    align-items: flex-start;
+    max-width: 1000px;
+    margin: auto;
+}
+
+.numero-capitulo {
+    color: #38bdf8;
+    font-size: 15px;
+    letter-spacing: 4px;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.capitulo h2 {
+    font-size: 55px;
+    margin-bottom: 35px;
+}
+
+.texto-historia {
+    max-width: 800px;
+    font-size: 19px;
+    line-height: 1.9;
+    margin-bottom: 20px;
+    color: #cbd5e1;
+}
+.destaque {
+    border-left: 4px solid #38bdf8;
+    padding-left: 25px;
+    color: white;
+    font-weight: bold;
+}
+.bloco-atual {
+    width: 100%;
+    max-width: 800px;
+    margin-top: 40px;
+    padding: 30px;
+    border: 1px solid #1e293b;
+    border-radius: 15px;
+    background-color: #111827;
+    transition: 0.3s;
+}
+
+.bloco-atual:hover {
+    transform: translateY(-5px);
+    border-color: #38bdf8;
+}
+
+.bloco-atual h3 {
+    font-size: 28px;
+    margin-bottom: 15px;
+    color: #38bdf8;
+}
+.frase-final {
+    min-height: 70vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 100px 10%;
+    background-color: #020617;
+}
+
+.frase-pequena {
+    color: #38bdf8;
+    font-size: 16px;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    margin-bottom: 30px;
+}
+
+.frase-final h2 {
+    max-width: 900px;
+    font-size: 70px;
+    line-height: 1.1;
+    font-weight: bold;
+    color: white;
+    margin-bottom: 30px;
+}
+
+.frase-final-descricao {
+    max-width: 650px;
+    color: #94a3b8;
+    font-size: 20px;
+    line-height: 1.7;
+}
+/* =========================
+   RESPONSIVIDADE - CELULAR
+   ========================= */
+
+@media (max-width: 768px) {
+
+    /* MENU */
+    header {
+        padding: 15px 10px;
+    }
+
+    nav {
+        gap: 12px;
+        flex-wrap: wrap;
+    }
+
+    nav a {
+        font-size: 13px;
+    }
+
+
+    /* SEÇÕES */
+    section {
+        min-height: auto;
+        padding: 110px 25px 70px;
+    }
+
+
+    /* INÍCIO */
+    .hero {
+        min-height: 100vh;
+        padding: 120px 25px 80px;
+    }
+
+    .saudacao {
+        font-size: 14px;
+        letter-spacing: 3px;
+    }
+
+    .hero h1 {
+        font-size: 55px;
+        letter-spacing: 5px;
+    }
+
+    .hero h2 {
+        font-size: 22px;
+        line-height: 1.4;
+    }
+
+    .descricao {
+        font-size: 16px;
+        line-height: 1.7;
+    }
+
+    .botao {
+        padding: 13px 22px;
+        font-size: 14px;
+    }
+
+
+    /* CAPÍTULOS */
+    .capitulo {
+        width: 100%;
+        padding-left: 25px;
+        padding-right: 25px;
+    }
+
+    .numero-capitulo {
+        font-size: 12px;
+        letter-spacing: 3px;
+    }
+
+    .capitulo h2 {
+        font-size: 36px;
+        line-height: 1.2;
+        margin-bottom: 25px;
+    }
+
+    .texto-historia {
+        font-size: 17px;
+        line-height: 1.8;
+        margin-bottom: 20px;
+    }
+
+
+    /* DESTAQUES */
+    .destaque {
+        padding-left: 18px;
+        border-left-width: 3px;
+    }
+
+
+    /* BLOCOS */
+    .bloco-atual {
+        width: 100%;
+        padding: 22px;
+        margin-top: 25px;
+    }
+
+    .bloco-atual h3 {
+        font-size: 23px;
+    }
+
+
+    /* FRASE FINAL */
+    .frase-final {
+        min-height: 100vh;
+        padding: 80px 25px;
+    }
+
+    .frase-pequena {
+        font-size: 12px;
+        letter-spacing: 2px;
+        margin-bottom: 25px;
+    }
+
+    .frase-final h2 {
+        font-size: 42px;
+        line-height: 1.15;
+    }
+
+    .frase-final-descricao {
+        font-size: 17px;
+        line-height: 1.7;
+    }
+
+}
+
+
+/* CELULARES PEQUENOS */
+@media (max-width: 480px) {
+
+    nav {
+        gap: 8px;
+    }
+
+    nav a {
+        font-size: 11px;
+    }
+
+    .hero h1 {
+        font-size: 45px;
+    }
+
+    .hero h2 {
+        font-size: 20px;
+    }
+
+    .capitulo h2 {
+        font-size: 31px;
+    }
+
+    .texto-historia {
+        font-size: 16px;
+    }
+
+    .frase-final h2 {
+        font-size: 35px;
+    }
+
+}
+.foto-final {
+    width: 180px;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 4px solid #38bdf8;
+    margin-bottom: 35px;
+    box-shadow: 0 0 30px rgba(56, 189, 248, 0.25);
+}
+}
